@@ -12,7 +12,7 @@
         padding: 0;
       }
       
-      p {
+      p { 
         padding: 0;
         margin: 0;
       }
@@ -85,47 +85,56 @@
       }
       
       .hero-desc {
-        width: 40%;
+        width: 50%;
       }
       .hero-desc P {
-        font-size: 14px;
+        font-size: 100%;
         line-height: 150%;
       }
       .hero-image {
         width: 50%;
       }
-      
-      .catagory-item {
-        height: 380px;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-      }
-      .catagory-item .overlay {
-        z-index: 5;
-        opacity: 0;
-        position: absolute;
-        padding: 20px;
-        height: 100%;
-        width: 95%;
-        background-color: rgba(210, 105, 30, 0.597);
-        color: rgba(255, 255, 255, 0.767);
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
-      }
-      .catagory-item .overlay .btn-outline {
-        text-decoration: none;
-        padding: 15px;
-        background: none;
-        color: white;
-        display: inline-block;
-        border: 2px solid #fff;
-        font-size: 12px;
-        letter-spacing: 2px;
-      }
-      .catagory-item:hover .overlay {
-        opacity: 1;
-      }
-      .catagory-item:hover img {
-        filter: blur(3px);
-        transition: cubic-bezier(0.215, 0.61, 0.355, 1) 3s;
-      }/*# sourceMappingURL=style.css.map */
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,0fr);
+  margin: 80px;
+  align-items: center;
+  grid-gap: 225px;
+}
+img{
+  object-fit: cover;
+}
+.grid > article{
+  box-shadow: 10px 5px 5px 0px black;
+  border-radius: 20px;
+  text-align: center;
+  background: whitesmoke;
+  width: 300px;
+  height: 450px;
+  transition: transfrom;
+}
+
+.grid > article img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+.grid > article:hover{
+transform: scale(1.2)
+}
+@media (max-widht:1000px){
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+.grid .btn-outline {
+  text-decoration: none;
+  padding: 15px;
+  background: none;
+  color: rgb(11, 11, 11);
+  display: inline-block;
+  border: 3px solid #262525;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
