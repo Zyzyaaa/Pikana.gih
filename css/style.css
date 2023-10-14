@@ -1,6 +1,6 @@
     body {
         background: rgb(240,186,237);
-    background: linear-gradient(90deg, rgba(240,186,237,0.7769958325126926) 0%, rgba(240,114,210,1) 35%, rgba(206,52,159,0.8016456582633054) 100%);
+background: linear-gradient(90deg, rgba(240,186,237,1) 0%, rgba(206,52,159,1) 48%, rgba(240,186,237,1) 100%);
         margin: 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
